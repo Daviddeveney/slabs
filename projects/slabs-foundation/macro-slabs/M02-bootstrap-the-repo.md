@@ -2,7 +2,7 @@
 
 ## Status
 
-`Active`
+`Done`
 
 ## Parent Brief
 
@@ -45,4 +45,4 @@ The repo is the distribution vehicle for the framework.
 ## Artifacts
 
 - repository root
-
+- public repo: `https://github.com/Daviddeveney/slabs`

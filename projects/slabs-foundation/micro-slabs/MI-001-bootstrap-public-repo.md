@@ -2,7 +2,7 @@
 
 ## Status
 
-`Active`
+`Done`
 
 ## Parent Macro Slab
 
@@ -34,4 +34,4 @@ This is the enabling task that turns the concept into a shareable project.
 ## Artifacts
 
 - repository root
-
+- public repo: `https://github.com/Daviddeveney/slabs`

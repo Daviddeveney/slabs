@@ -2,7 +2,7 @@
 
 ## Status
 
-`Active`
+`Done`
 
 ## Parent Macro Slab
 
@@ -35,4 +35,3 @@ This task gives the framework durable context and progress capture patterns from
 - [`../../../templates/tracking-hub-template.md`](../../../templates/tracking-hub-template.md)
 - [`../../../templates/agent-memory-template.md`](../../../templates/agent-memory-template.md)
 - [`../memory/2026-04-19-bootstrap.md`](../memory/2026-04-19-bootstrap.md)
-

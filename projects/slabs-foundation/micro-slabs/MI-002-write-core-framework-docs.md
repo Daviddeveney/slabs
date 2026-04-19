@@ -2,7 +2,7 @@
 
 ## Status
 
-`Active`
+`Done`
 
 ## Parent Macro Slab
 
@@ -35,4 +35,3 @@ This task establishes the shared vocabulary for all future work in the repo.
 - [`../../../docs/concepts.md`](../../../docs/concepts.md)
 - [`../../../docs/operating-model.md`](../../../docs/operating-model.md)
 - [`../../../README.md`](../../../README.md)
-

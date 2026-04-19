@@ -14,6 +14,7 @@ The user wants a new ways-of-working project called Slabs with its own public Gi
 - Defined the core concept model and operating model.
 - Added starter templates for briefs, slabs, tracking, memory, and proactive suggestions.
 - Seeded a live bootstrap project that uses Slabs to build Slabs.
+- Published the public GitHub repo at `https://github.com/Daviddeveney/slabs`.
 
 ## Decisions
 
@@ -40,4 +41,3 @@ The user wants a new ways-of-working project called Slabs with its own public Gi
 - Publish the public repo and link it into the work brief.
 - Draft the first automation workflow for suggested micro slabs.
 - Add another example project to test whether the model generalizes cleanly.
-

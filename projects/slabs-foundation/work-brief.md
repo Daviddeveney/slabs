@@ -46,6 +46,7 @@ Complex work across many Codex sessions becomes brittle when context is scattere
 ## Artifacts
 
 - repository root
+- public repo: `https://github.com/Daviddeveney/slabs`
 - [`tracking-hub.md`](tracking-hub.md)
 - [`memory/2026-04-19-bootstrap.md`](memory/2026-04-19-bootstrap.md)
 
@@ -69,4 +70,3 @@ Complex work across many Codex sessions becomes brittle when context is scattere
 ## Memory Files
 
 - [`memory/2026-04-19-bootstrap.md`](memory/2026-04-19-bootstrap.md)
-

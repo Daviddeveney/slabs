@@ -2,7 +2,7 @@
 
 ## Status
 
-`Active`
+`Done`
 
 ## Parent Brief
 
@@ -46,4 +46,3 @@ Tracking and memory are the pieces that make the framework resilient across many
 - [`../../../templates/tracking-hub-template.md`](../../../templates/tracking-hub-template.md)
 - [`../../../templates/agent-memory-template.md`](../../../templates/agent-memory-template.md)
 - [`../memory/2026-04-19-bootstrap.md`](../memory/2026-04-19-bootstrap.md)
-
