@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Doc Work Brief"
+  short_description: "Create a new Slabs work brief in Google Docs via the Google Drive plugin."
+  default_prompt: "Use $google-doc-work-brief to create a new Google Doc work brief for this initiative from the Slabs template."

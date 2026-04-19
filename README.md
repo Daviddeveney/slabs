@@ -145,17 +145,80 @@ This repo is intentionally a first foundation, not the final shape.
 
 ```text
 .
+├── .agents/
 ├── AGENTS.md
+├── apps/
 ├── docs/
+├── global-context/
+├── plugins/
+├── scripts/
 ├── projects/
+│   ├── README.md
 │   └── slabs-foundation/
+├── skills/
 ├── templates/
 └── LICENSE
 ```
 
 - `docs/` explains the Slabs model.
+- `.agents/` contains repo-local plugin marketplace metadata.
+- `apps/` contains local-first user interfaces built on top of the Slabs filesystem.
+- `global-context/` stores workspace-wide references that several projects may share.
+- `plugins/` contains repo-local Codex plugins and related implementation assets.
+- `scripts/` contains helper scripts for shaping and maintaining a local Slabs workspace.
+- `projects/` is the canonical local workspace where each user initiative lives in its own project folder.
+- `skills/` contains reusable Codex skills that embody recommended Slabs workflows.
 - `templates/` contains reusable starter documents.
 - `projects/slabs-foundation/` is the first live project inside the framework: building Slabs itself.
+- Additional folders under `projects/` are local-only by default and ignored by git so cloned repos do not carry a user's personal initiatives.
+- Additional notes under `global-context/` are local-only by default and ignored by git so shared workspace references stay personal unless someone intentionally changes the ignore rules.
+
+## Canonical Local Workspace
+
+Slabs is meant to live locally for each user, so the filesystem layout should be part of the framework rather than an afterthought.
+
+The canonical local workspace root includes two layers:
+
+```text
+global-context/
+projects/
+```
+
+Each initiative should live at:
+
+```text
+projects/<project-slug>/
+├── README.md
+├── brief-link.txt (optional)
+├── tracking-hub.md
+├── macro-slabs/
+├── micro-slabs/
+├── memory/
+├── context/
+└── suggestions/
+```
+
+- `memory/` stores dated durable session memory.
+- `context/` stores longer-lived supporting notes that future sessions may need.
+- `suggestions/` stores proactive suggested micro slabs when that workflow is in use.
+- `global-context/` stores workspace-wide references that multiple projects may need to link to, such as shared GitHub repository notes.
+- `projects/slabs-foundation/` stays version-controlled as the canonical example project.
+- Additional `projects/<project-slug>/` folders are intentionally ignored by git by default so users can work locally without publishing personal project state.
+- Additional `global-context/*.md` notes are intentionally ignored by git by default for the same reason.
+
+The easiest way to create a new project folder is:
+
+```bash
+./scripts/scaffold_project.sh <project-slug> "Project Title"
+```
+
+There is also a local review app for non-technical users:
+
+```bash
+cd apps/slabs-reviewer
+npm install
+npm run dev
+```
 
 ## What This Repo Should Become
 
@@ -173,13 +236,13 @@ Over time, Slabs should grow in sophistication through:
 
 ## How To Use Slabs
 
-1. Copy the templates into a new project folder.
-2. Write the work brief first.
+1. Scaffold a new project inside `projects/` with `./scripts/scaffold_project.sh <project-slug> "Project Title"`.
+2. Create the live Google Doc work brief and attach its URL in `brief-link.txt`.
 3. Define 3-7 macro slabs that describe the major outcome areas.
 4. Break each macro slab into small micro slabs that can be executed with minimal context switching.
 5. Track progress in the tracking hub as work moves.
-6. Save compact memory snapshots so future agents can restart quickly.
-7. Let automations propose candidate micro slabs, but keep acceptance human-driven.
+6. Save compact memory snapshots in `memory/`, project-specific reference notes in `context/`, and workspace-wide references in `global-context/` when several projects need the same context.
+7. Let automations propose candidate micro slabs into `suggestions/`, but keep acceptance human-driven.
 
 ## Current Starting Point
 
@@ -187,6 +250,11 @@ The repo currently includes:
 
 - a first-pass concept model
 - an operating model for how slabs relate to Codex sessions
+- a canonical local project workspace structure
+- a workspace-wide global context layer for shared references
+- a simple local review app for macro and micro slabs
+- a first repo-local Codex plugin prototype for controlling Claude Code
+- a first bundled Codex skill for starting work briefs in Google Docs
 - reusable templates
 - a bootstrap project brief for building Slabs itself
 
@@ -204,5 +272,5 @@ The repo currently includes:
 
 - [`docs/concepts.md`](docs/concepts.md)
 - [`docs/operating-model.md`](docs/operating-model.md)
-- [`projects/slabs-foundation/work-brief.md`](projects/slabs-foundation/work-brief.md)
+- [`projects/slabs-foundation/brief-link.txt`](projects/slabs-foundation/brief-link.txt)
 - [`projects/slabs-foundation/tracking-hub.md`](projects/slabs-foundation/tracking-hub.md)

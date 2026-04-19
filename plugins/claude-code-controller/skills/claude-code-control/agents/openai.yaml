@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Code Control"
+  short_description: "Control the local Claude Code CLI from Codex."
+  default_prompt: "Use $claude-code-control to run a local Claude Code command for this workspace."

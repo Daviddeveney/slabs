@@ -2,7 +2,7 @@
 
 ## Status
 
-`Ready`
+`Superseded`
 
 ## Parent Macro Slab
 
@@ -34,3 +34,6 @@ This is the first bridge from static documentation into proactive operational be
 
 - [`../../../templates/proactive-suggestions-template.md`](../../../templates/proactive-suggestions-template.md)
 
+## Notes
+
+Ignored from the reviewer after the user removed this micro slab from the active queue.

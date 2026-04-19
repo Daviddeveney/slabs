@@ -38,6 +38,6 @@ The user wants a new ways-of-working project called Slabs with its own public Gi
 
 ## Likely Next Actions
 
-- Publish the public repo and link it into the work brief.
+- Superseded: Publish the public repo and link it into the work brief. Completed on 2026-04-19.
 - Draft the first automation workflow for suggested micro slabs.
 - Add another example project to test whether the model generalizes cleanly.

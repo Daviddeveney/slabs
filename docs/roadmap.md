@@ -13,6 +13,7 @@
 - Define status conventions more formally.
 - Add examples for different kinds of work.
 - Clarify how memory should be captured and referenced.
+- Stabilize the canonical local workspace structure for multi-project use.
 
 ## Phase 2: Automation Layer
 
@@ -27,6 +28,7 @@
 - Create indexes or rollups from Markdown sources.
 - Add validation for links and identifiers.
 - Explore metadata formats that remain human-readable.
+- Prototype tool-specific starter skills that turn common Slabs actions into repeatable Codex workflows.
 
 ## Phase 4: Workflow Packs
 
@@ -35,4 +37,3 @@
 - Writing pack
 - Operations pack
 - Personal planning pack
-

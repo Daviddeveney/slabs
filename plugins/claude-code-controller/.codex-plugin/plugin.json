@@ -1,0 +1,40 @@
+{
+  "name": "claude-code-controller",
+  "version": "0.1.0",
+  "description": "Repo-local Codex plugin for controlling the locally installed Claude Code CLI.",
+  "author": {
+    "name": "David Deveney",
+    "url": "https://github.com/Daviddeveney"
+  },
+  "homepage": "https://github.com/Daviddeveney/slabs",
+  "repository": "https://github.com/Daviddeveney/slabs",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "codex",
+    "plugin",
+    "automation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Claude Code Controller",
+    "shortDescription": "Run the local Claude Code CLI from Codex through a wrapper script.",
+    "longDescription": "Adds a repo-local skill for checking the local Claude Code install, running one-shot prompts, and resuming Claude sessions on this machine without remembering raw CLI flags.",
+    "developerName": "David Deveney",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Daviddeveney/slabs",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Use Claude Code to inspect the local installation.",
+      "Ask Claude Code a one-shot question about this repo.",
+      "Resume a Claude Code session for this workspace."
+    ],
+    "brandColor": "#D97706"
+  }
+}

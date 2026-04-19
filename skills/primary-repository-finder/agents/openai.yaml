@@ -1,0 +1,4 @@
+interface:
+  display_name: "Primary Repositories"
+  short_description: "Find the right local repos for a Slabs project and update its automation profile."
+  default_prompt: "Use $primary-repository-finder to find the right local repositories for this Slabs project and update the Primary Repositories section in automation-profile.md."
