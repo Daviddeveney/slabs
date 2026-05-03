@@ -2,8 +2,8 @@
 
 ## Purpose
 
-This file defines how future Symphony-style automation should run Codex from
-Linear issues in this repo.
+This file defines how Codex Automations should run from Linear issues in this
+repo.
 
 Linear is the source of truth for active work. GitHub is the source of truth for
 code review, CI, and shipped implementation history.
