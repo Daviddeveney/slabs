@@ -6,7 +6,7 @@
 
 ## Parent Brief
 
-- [`../work-brief.md`](../work-brief.md)
+- [`../brief-link.txt`](../brief-link.txt)
 
 ## Objective
 

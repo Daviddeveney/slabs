@@ -28,6 +28,13 @@ projects/<project-slug>/
 └── suggestions/
 ```
 
+The required setup contract is:
+
+- required files: `README.md`, `automation-profile.md`, `tracking-hub.md`
+- required folders: `macro-slabs/`, `micro-slabs/`, `memory/`, `context/`, `suggestions/`
+- optional active-brief pointer: `brief-link.txt`
+- legacy local briefs: move preserved Markdown brief content into `context/` and keep the live brief in Google Docs
+
 Workspace-wide material that several projects share should live once in:
 
 ```text
@@ -69,6 +76,25 @@ This creates the canonical directory structure and seeds:
 
 The Google Doc brief stays outside the repo; add its URL later in
 `brief-link.txt` when the live brief exists.
+
+## Validate Project Setups
+
+Run:
+
+```bash
+./scripts/validate_project_setups.sh
+```
+
+To check one project:
+
+```bash
+./scripts/validate_project_setups.sh roundreserve
+```
+
+The validator fails on missing required files or folders. It also warns about
+suggestion-readiness gaps, such as missing `brief-link.txt`, empty automation
+profile sections, or legacy root-level `work-brief.md` files. Use `--strict`
+when warnings should fail the run too.
 
 If you intentionally want to publish another project folder as part of the
 framework, update `projects/.gitignore` first. The default behavior is to keep

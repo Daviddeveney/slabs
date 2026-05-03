@@ -190,6 +190,7 @@ Each initiative should live at:
 projects/<project-slug>/
 ├── README.md
 ├── brief-link.txt (optional)
+├── automation-profile.md
 ├── tracking-hub.md
 ├── macro-slabs/
 ├── micro-slabs/
@@ -210,6 +211,12 @@ The easiest way to create a new project folder is:
 
 ```bash
 ./scripts/scaffold_project.sh <project-slug> "Project Title"
+```
+
+To check whether project folders still match the standard setup:
+
+```bash
+./scripts/validate_project_setups.sh
 ```
 
 There is also a local review app for non-technical users:
@@ -256,7 +263,8 @@ The repo currently includes:
 - a first repo-local Codex plugin prototype for controlling Claude Code
 - a first bundled Codex skill for starting work briefs in Google Docs
 - reusable templates
-- a bootstrap project brief for building Slabs itself
+- a bootstrap example project for building Slabs itself
+- a project setup validator for keeping local workspaces organized
 
 ## Next Likely Evolutions
 

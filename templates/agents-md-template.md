@@ -2,33 +2,22 @@
 
 ## Source Of Truth
 
-Active work now lives in Linear. Use Linear issues for goals, priority, status,
+Active work lives in Linear. Use Linear issues for goals, priority, status,
 review, and follow-up work.
 
 Use GitHub for branches, pull requests, CI, and shipped implementation history.
-Do not create new Slabs tracking hubs, macro slabs, or micro slabs for daily
-work unless the user explicitly asks.
-
-The existing Slabs materials are historical reference and migration context.
-Preserve useful history instead of deleting it.
-
-## Intent
-
-This repo originally defined Slabs, a Markdown-native framework for structuring
-Codex work. During the Linear migration, optimize for a simpler operating model:
-Linear for planning, GitHub for code review, repo docs for agent behavior, and
-Codex skills for scenario-specific execution.
+Do not create parallel planning docs unless the user explicitly asks.
 
 ## Working Rules
 
-1. Start from the Linear issue when one is provided.
+1. Start from the Linear issue goal, context, done criteria, and verification.
 2. Keep changes small, scoped, and reversible.
-3. Prefer evolving existing templates and docs over creating parallel patterns.
-4. Preserve historical Slabs context by marking stale content as superseded
-   instead of deleting useful material.
-5. Capture migration decisions in Linear first; add repo docs only when they
-   are reusable beyond one issue.
-6. Run the verification named in the issue or the closest relevant repo checks.
+3. Prefer existing repo patterns over new abstractions.
+4. Run the verification named in the issue or the closest relevant repo checks.
+5. Report the result with changed files, verification, risks, and suggested
+   follow-up issues.
+6. Move or recommend moving the Linear issue to review only when the work is
+   ready for human review.
 
 ## Safety
 
@@ -94,18 +83,15 @@ Use the most specific applicable skill:
   default.
 - `security-best-practices`: explicit security review or secure coding work.
 - `openai-docs`: OpenAI API/product documentation questions.
-- `skill-creator`: create or update Codex skills.
-- `skill-installer`: install or list installable Codex skills.
-- `plugin-creator`: create local Codex plugins.
+- Repo-specific skills listed below when this repo owns that domain.
 
-## Slabs-Specific Guidance
+## Repo-Specific Skills
 
-- Treat `templates/` as reusable migration/reference assets.
-- Treat `projects/` as historical Slabs workspace data unless a Linear issue
-  explicitly asks to edit it.
-- Keep examples realistic enough that a cloned repo can be understood quickly.
-- When archiving Slabs material, add a superseded note and link to the relevant
-  Linear issue or project.
+Add repo-specific skills here.
+
+```md
+- `skill-name`: use when ...
+```
 
 ## Handoff Format
 

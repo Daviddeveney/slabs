@@ -6,7 +6,7 @@
 
 ## Parent Brief
 
-- [`../work-brief.md`](../work-brief.md)
+- [`../brief-link.txt`](../brief-link.txt)
 
 ## Objective
 
@@ -43,6 +43,21 @@ This is the mechanism that turns Slabs from a passive documentation structure in
 - [`../micro-slabs/MI-021-define-suggestion-conversion-and-supersession-rules.md`](../micro-slabs/MI-021-define-suggestion-conversion-and-supersession-rules.md)
 - [`../micro-slabs/MI-022-tighten-the-project-context-bundle-checklist.md`](../micro-slabs/MI-022-tighten-the-project-context-bundle-checklist.md)
 - [`../micro-slabs/MI-023-add-a-quality-rubric-for-codex-suggested-micro-slabs.md`](../micro-slabs/MI-023-add-a-quality-rubric-for-codex-suggested-micro-slabs.md)
+- [`../micro-slabs/MI-024-add-an-automation-docs-index-and-entrypoints.md`](../micro-slabs/MI-024-add-an-automation-docs-index-and-entrypoints.md)
+- [`../micro-slabs/MI-025-publish-a-worked-example-of-an-hourly-suggestion-run.md`](../micro-slabs/MI-025-publish-a-worked-example-of-an-hourly-suggestion-run.md)
+- [`../micro-slabs/MI-026-define-tracking-hub-write-back-rules-for-codex-suggested-micros.md`](../micro-slabs/MI-026-define-tracking-hub-write-back-rules-for-codex-suggested-micros.md)
+- [`../micro-slabs/MI-027-expand-the-automation-profile-template-with-suggestion-ready-guidance.md`](../micro-slabs/MI-027-expand-the-automation-profile-template-with-suggestion-ready-guidance.md)
+- [`../micro-slabs/MI-028-document-the-ignore-and-supersede-lifecycle-for-automation-created-micros.md`](../micro-slabs/MI-028-document-the-ignore-and-supersede-lifecycle-for-automation-created-micros.md)
+- [`../micro-slabs/MI-029-define-live-brief-resolution-and-fallback-rules-for-hourly-reviews.md`](../micro-slabs/MI-029-define-live-brief-resolution-and-fallback-rules-for-hourly-reviews.md)
+- [`../micro-slabs/MI-030-define-macro-selection-precedence-for-project-reviews.md`](../micro-slabs/MI-030-define-macro-selection-precedence-for-project-reviews.md)
+- [`../micro-slabs/MI-031-add-recent-memory-selection-rules-for-hourly-automation-reviews.md`](../micro-slabs/MI-031-add-recent-memory-selection-rules-for-hourly-automation-reviews.md)
+- [`../micro-slabs/MI-032-define-dedupe-heuristics-for-automation-created-micro-slabs.md`](../micro-slabs/MI-032-define-dedupe-heuristics-for-automation-created-micro-slabs.md)
+- [`../micro-slabs/MI-033-add-contrastive-automation-profile-examples-for-live-projects.md`](../micro-slabs/MI-033-add-contrastive-automation-profile-examples-for-live-projects.md)
+- [`../micro-slabs/MI-034-add-project-suggestion-readiness-warnings-to-reviewer.md`](../micro-slabs/MI-034-add-project-suggestion-readiness-warnings-to-reviewer.md)
+- [`../micro-slabs/MI-035-add-a-workspace-validator-for-suggestion-ready-project-folders.md`](../micro-slabs/MI-035-add-a-workspace-validator-for-suggestion-ready-project-folders.md)
+- [`../micro-slabs/MI-036-add-duplicate-aware-micro-creation-warnings-in-reviewer.md`](../micro-slabs/MI-036-add-duplicate-aware-micro-creation-warnings-in-reviewer.md)
+- [`../micro-slabs/MI-037-surface-recent-project-memory-files-in-reviewer.md`](../micro-slabs/MI-037-surface-recent-project-memory-files-in-reviewer.md)
+- [`../micro-slabs/MI-038-add-a-codex-suggested-review-filter-on-macro-pages.md`](../micro-slabs/MI-038-add-a-codex-suggested-review-filter-on-macro-pages.md)
 
 ## Done Criteria
 

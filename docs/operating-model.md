@@ -34,6 +34,7 @@ global-context/
 projects/<project-slug>/
 ├── README.md
 ├── brief-link.txt (optional)
+├── automation-profile.md
 ├── tracking-hub.md
 ├── macro-slabs/
 ├── micro-slabs/
@@ -44,13 +45,16 @@ projects/<project-slug>/
 
 - `memory/` is for dated durable session memory.
 - `context/` is for longer-lived project notes that support future sessions.
+- `automation-profile.md` is for project-specific automation context.
 - `global-context/` is for workspace-wide references that several projects share.
 - `suggestions/` is for proactive suggested micro slabs when that workflow is active.
 - In this repo, `projects/slabs-foundation/` stays tracked as the canonical
   example while additional project folders and workspace-global notes are
   gitignored by default so users can keep personal working state local.
 
-Use [`projects/README.md`](../projects/README.md) as the user-facing reference for this layout and `./scripts/scaffold_project.sh` to create new project folders quickly.
+Use [`projects/README.md`](../projects/README.md) as the user-facing reference
+for this layout, `./scripts/scaffold_project.sh` to create new project folders
+quickly, and `./scripts/validate_project_setups.sh` to check for setup drift.
 
 ## Recommended Granularity
 

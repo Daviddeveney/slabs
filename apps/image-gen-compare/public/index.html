@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Gen Compare</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div>
+          <p class="kicker">Slabs Lab</p>
+          <h1>Image Gen Compare</h1>
+        </div>
+        <div class="status-card" id="statusCard">
+          <span class="status-dot"></span>
+          Checking keys
+        </div>
+      </header>
+
+      <section class="workspace">
+        <form class="control-panel" id="compareForm">
+          <label class="field">
+            <span>Prompt</span>
+            <textarea id="prompt" rows="8">Create a square editorial fintech daily briefing cover with restrained typography, a paper-like central artifact, subtle payment network lines, and a calm institutional palette. No fake paragraphs, only short legible title text.</textarea>
+          </label>
+
+          <div class="control-grid">
+            <label class="field">
+              <span>Size</span>
+              <select id="size">
+                <option value="1024x1024">Square 1024</option>
+                <option value="1536x1024">Landscape</option>
+                <option value="1024x1536">Portrait</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>OpenAI quality</span>
+              <select id="quality">
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset class="provider-group">
+            <legend>Providers</legend>
+            <label><input type="checkbox" name="provider" value="openai" checked /> OpenAI</label>
+            <label><input type="checkbox" name="provider" value="gemini" checked /> Gemini</label>
+          </fieldset>
+
+          <button class="generate-button" type="submit" id="generateButton">
+            Generate comparison
+          </button>
+
+          <p class="fine-print">
+            Keys are read from local `.env`. Google uses fixed/default Nano Banana quality; OpenAI quality is selectable.
+          </p>
+        </form>
+
+        <section class="results" aria-live="polite">
+          <article class="result-card" id="openaiCard">
+            <div class="result-header">
+              <div>
+                <p class="kicker">OpenAI</p>
+                <h2>gpt-image-2</h2>
+              </div>
+              <span class="pill" id="openaiCost">$0.032 est.</span>
+            </div>
+            <div class="image-stage">
+              <p>Run a prompt to generate an OpenAI image.</p>
+            </div>
+            <dl class="metrics">
+              <div><dt>Quality</dt><dd id="openaiQuality">Medium</dd></div>
+              <div><dt>Time</dt><dd id="openaiTime">-</dd></div>
+            </dl>
+          </article>
+
+          <article class="result-card" id="geminiCard">
+            <div class="result-header">
+              <div>
+                <p class="kicker">Google</p>
+                <h2>Nano Banana</h2>
+              </div>
+              <span class="pill" id="geminiCost">$0.039 est.</span>
+            </div>
+            <div class="image-stage">
+              <p>Run a prompt to generate a Gemini image.</p>
+            </div>
+            <dl class="metrics">
+              <div><dt>Quality</dt><dd>Fixed/default</dd></div>
+              <div><dt>Time</dt><dd id="geminiTime">-</dd></div>
+            </dl>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <div class="lightbox" id="imageLightbox" hidden>
+      <div class="lightbox-backdrop" data-close-lightbox></div>
+      <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+        <div class="lightbox-toolbar">
+          <div>
+            <p class="kicker">Expanded preview</p>
+            <h2 id="lightboxTitle">Generated image</h2>
+          </div>
+          <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close expanded preview">
+            Close
+          </button>
+        </div>
+        <div class="lightbox-frame">
+          <img id="lightboxImage" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

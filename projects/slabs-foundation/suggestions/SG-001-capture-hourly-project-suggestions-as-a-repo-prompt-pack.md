@@ -67,4 +67,4 @@ Superseded on 2026-04-19 after this slice was promoted into
 - `projects/slabs-foundation/memory/2026-04-19-codex-suggested-micro-flow.md`
 - `projects/slabs-foundation/memory/2026-04-19-project-automation-profiles.md`
 - `templates/proactive-suggestions-template.md`
-- Work brief: `projects/slabs-foundation/work-brief.md`
+- Work brief: `projects/slabs-foundation/context/legacy-work-brief.md`

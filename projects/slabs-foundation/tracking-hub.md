@@ -2,7 +2,7 @@
 
 ## Current Status
 
-The initial Slabs repo foundation is established. Core concepts, templates, bootstrap artifacts, the first bundled workflow skill, the first live Google Doc work brief, the first repo-local plugin prototype, the canonical local project workspace structure, the workspace-wide global context layer, and a local review-and-edit app are now in place. The reviewer is staying focused on project review and editing while proactive suggestion work shifts back into normal Codex context. Project-level automation profiles are now managed directly from the reviewer so future hourly automations can discover the right repos, tools, and context boundaries per project, a dedicated Codex skill now helps users correct the primary repo list that those automations depend on, and the live hourly automation now creates batches of real `MI-...` slabs instead of suggestion-only notes while the reviewer gives users a fast ignore flow for any micro slab they do not want to keep.
+The initial Slabs repo foundation is established. Core concepts, templates, bootstrap artifacts, the first bundled workflow skill, the first live Google Doc work brief, the first repo-local plugin prototype, the canonical local project workspace structure, the workspace-wide global context layer, and a local review-and-edit app are now in place. The reviewer is staying focused on project review and editing while proactive suggestion work shifts back into normal Codex context. Project-level automation profiles are now managed directly from the reviewer so future hourly automations can discover the right repos, tools, and context boundaries per project, a dedicated Codex skill now helps users correct the primary repo list that those automations depend on, and the live hourly automation now creates batches of real `MI-...` slabs instead of suggestion-only notes while the reviewer gives users a fast ignore flow for any micro slab they do not want to keep. The current automation-contract queue now also covers live-brief fallback, macro selection precedence, recent-memory limits, dedupe heuristics, contrastive automation-profile examples, and the reviewer-side readiness tooling that makes those hourly contracts easier to trust.
 
 ## Macro Slab Rollup
 
@@ -36,12 +36,27 @@ The initial Slabs repo foundation is established. Core concepts, templates, boot
 | [MI-016](micro-slabs/MI-016-add-primary-repository-finder-skill.md) | Done | Added a reusable Codex skill and helper script for finding the right local repo roots for a project and tightening the `Primary Repositories` list in `automation-profile.md`. |
 | [MI-017](micro-slabs/MI-017-create-real-codex-suggested-micro-slabs.md) | Done | Shifted the hourly automation to create real `MI-...` slabs, added a durable origin marker, and surfaced a clear `Codex suggested` label in the reviewer. |
 | [MI-018](micro-slabs/MI-018-add-ignore-flow-for-codex-suggested-micros.md) | Done | Added a quick ignore action for all micro slabs, hid ignored slabs from reviewer counts and macro lists, and expanded the hourly automation to target five real micro slabs per project on each run. |
-| [MI-019](micro-slabs/MI-019-capture-hourly-project-suggestions-as-a-repo-prompt-pack.md) | Ready | Codex suggested capturing the live hourly project-suggestions automation as a repo-owned prompt pack. |
+| [MI-019](micro-slabs/MI-019-capture-hourly-project-suggestions-as-a-repo-prompt-pack.md) | Superseded | Codex suggested capturing the live hourly project-suggestions automation as a repo-owned prompt pack, then this slice was later ignored from the reviewer. |
 | [MI-020](micro-slabs/MI-020-add-automation-memory-template-and-run-summary-rules.md) | Ready | Codex suggested defining a reusable automation-memory template and run-summary convention. |
 | [MI-021](micro-slabs/MI-021-define-suggestion-conversion-and-supersession-rules.md) | Ready | Codex suggested codifying how `SG-...` ideas promote into real `MI-...` slabs and how the old suggestion stays visible. |
-| [MI-022](micro-slabs/MI-022-tighten-the-project-context-bundle-checklist.md) | Ready | Codex suggested tightening the minimum project-context checklist and the `primary-repository-finder` fallback rule for hourly reviews. |
+| [MI-022](micro-slabs/MI-022-tighten-the-project-context-bundle-checklist.md) | Superseded | Codex suggested tightening the minimum project-context checklist and the `primary-repository-finder` fallback rule for hourly reviews, then this slice was later ignored from the reviewer. |
 | [MI-023](micro-slabs/MI-023-add-a-quality-rubric-for-codex-suggested-micro-slabs.md) | Ready | Codex suggested a small quality rubric so future automation-created micro slabs stay bounded, distinct, and grounded. |
-| [MI-004](micro-slabs/MI-004-outline-proactive-suggestion-loop.md) | Ready | Shape the automation-driven suggestion model. |
+| [MI-024](micro-slabs/MI-024-add-an-automation-docs-index-and-entrypoints.md) | Ready | Codex suggested adding a `docs/automation/` index so prompt packs, templates, and rule docs have one discoverable home. |
+| [MI-025](micro-slabs/MI-025-publish-a-worked-example-of-an-hourly-suggestion-run.md) | Ready | Codex suggested publishing one worked hourly-run example so future agents can see the expected context, dedupe, and write-back pattern. |
+| [MI-026](micro-slabs/MI-026-define-tracking-hub-write-back-rules-for-codex-suggested-micros.md) | Ready | Codex suggested defining exactly how tracking hubs should record batches of Codex-suggested micro slabs. |
+| [MI-027](micro-slabs/MI-027-expand-the-automation-profile-template-with-suggestion-ready-guidance.md) | Ready | Codex suggested expanding the automation-profile template with compact guidance for suggestion-ready project reviews. |
+| [MI-028](micro-slabs/MI-028-document-the-ignore-and-supersede-lifecycle-for-automation-created-micros.md) | Ready | Codex suggested documenting how ignored or superseded automation-created micro slabs should behave in future runs. |
+| [MI-029](micro-slabs/MI-029-define-live-brief-resolution-and-fallback-rules-for-hourly-reviews.md) | Ready | Codex suggested defining how hourly reviews should resolve a project's live brief and fall back when the brief link is missing or unavailable. |
+| [MI-030](micro-slabs/MI-030-define-macro-selection-precedence-for-project-reviews.md) | Ready | Codex suggested codifying how hourly runs should choose one parent macro when several active, ready, or backlog options exist. |
+| [MI-031](micro-slabs/MI-031-add-recent-memory-selection-rules-for-hourly-automation-reviews.md) | Ready | Codex suggested tightening how many memory notes hourly reviews should read and how to balance recency against topical relevance. |
+| [MI-032](micro-slabs/MI-032-define-dedupe-heuristics-for-automation-created-micro-slabs.md) | Ready | Codex suggested defining the overlap checks that should block or reframe too-similar automation-created micro slabs. |
+| [MI-033](micro-slabs/MI-033-add-contrastive-automation-profile-examples-for-live-projects.md) | Ready | Codex suggested adding example automation-profile contracts grounded in the live Slabs Foundation and RoundReserve projects. |
+| [MI-034](micro-slabs/MI-034-add-project-suggestion-readiness-warnings-to-reviewer.md) | Ready | Codex suggested lightweight reviewer warnings so projects missing brief or automation context are obvious before hourly automation depends on them. |
+| [MI-035](micro-slabs/MI-035-add-a-workspace-validator-for-suggestion-ready-project-folders.md) | Done | Added `scripts/validate_project_setups.sh`, documented the required project setup contract, and normalized the foundation project context folder. |
+| [MI-036](micro-slabs/MI-036-add-duplicate-aware-micro-creation-warnings-in-reviewer.md) | Ready | Codex suggested warning about near-duplicate active micro slabs during reviewer-side creation so automation output is easier to dedupe. |
+| [MI-037](micro-slabs/MI-037-surface-recent-project-memory-files-in-reviewer.md) | Ready | Codex suggested surfacing recent memory files directly on project pages so manual review can see the same durable context automations use. |
+| [MI-038](micro-slabs/MI-038-add-a-codex-suggested-review-filter-on-macro-pages.md) | Ready | Codex suggested a quick macro-page filter for Codex-suggested micro slabs so users can review or ignore automation output faster. |
+| [MI-004](micro-slabs/MI-004-outline-proactive-suggestion-loop.md) | Superseded | The first high-level outline was replaced by later, more concrete automation-contract slabs. |
 
 ## Decisions
 
@@ -59,6 +74,7 @@ The initial Slabs repo foundation is established. Core concepts, templates, boot
 - `projects/README.md`
 - `projects/roundreserve/automation-profile.md`
 - `scripts/scaffold_project.sh`
+- `scripts/validate_project_setups.sh`
 - `skills/`
 - `skills/primary-repository-finder/`
 - `templates/`
@@ -79,7 +95,7 @@ The initial Slabs repo foundation is established. Core concepts, templates, boot
 - The new global-context layer is defined, but its initial taxonomy is still thin beyond shared GitHub repositories.
 - Source preview can now create shared-context notes, but it is still a preview-first surface rather than a full editor.
 - The shared repo registry now covers the main active repos, but broader global-context taxonomy still needs examples beyond repositories.
-- Existing legacy `work-brief.md` files may still exist in older projects until they are fully cleaned up or archived.
+- Legacy local brief content should live under project `context/` when it needs to be preserved; live briefs should be linked through `brief-link.txt`.
 - A live hourly Codex automation now exists for project suggestions, but the
   repo still lacks a durable prompt-pack artifact that captures its context
   contract and review rules.
@@ -133,3 +149,19 @@ The initial Slabs repo foundation is established. Core concepts, templates, boot
 - 2026-04-19: Reviewed the live hourly project-suggestions automation again and
   added `MI-019` through `MI-023` as five real Codex-suggested micro slabs for
   the next repo-side automation-contract work.
+- 2026-04-19: Reviewed the live hourly project-suggestions automation again and
+  added `MI-024` through `MI-028` as five more Codex-suggested micro slabs for
+  automation docs discovery, example runs, tracking write-back rules,
+  automation-profile guidance, and the ignore lifecycle.
+- 2026-04-19: Reviewed the live hourly project-suggestions automation again and
+  added `MI-029` through `MI-033` as five more Codex-suggested micro slabs for
+  live-brief fallback, macro selection precedence, recent-memory rules, dedupe
+  heuristics, and contrastive automation-profile examples.
+- 2026-04-19: Reviewed the live hourly project-suggestions automation again and
+  added `MI-034` through `MI-038` as five more Codex-suggested micro slabs for
+  reviewer-side readiness warnings, workspace validation, duplicate-aware micro
+  creation, recent-memory visibility, and faster Codex-suggested micro review.
+- 2026-05-02: Cleaned up the local project workspace contract, archived the
+  foundation `work-brief.md` into `context/legacy-work-brief.md`, added
+  `context/project-context.md`, and introduced `scripts/validate_project_setups.sh`
+  so project setup drift is easy to detect.

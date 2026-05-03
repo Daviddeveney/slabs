@@ -10,3 +10,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 **/.next/
+
+# Local scratch output
+.artifacts/
+outputs/
+tmp/

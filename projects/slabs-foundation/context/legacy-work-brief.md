@@ -1,4 +1,10 @@
-# Work Brief: Slabs Foundation
+# Legacy Work Brief: Slabs Foundation
+
+## Superseded Notice
+
+This Markdown brief is preserved for history. The active Slabs Foundation brief
+now lives in Google Docs and is linked from [`../brief-link.txt`](../brief-link.txt).
+Use [`project-context.md`](project-context.md) for compact repo-local context.
 
 ## Summary
 

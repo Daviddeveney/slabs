@@ -1,0 +1,17 @@
+{
+  "name": "image-gen-compare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "slabs",
+    "image-generation",
+    "comparison"
+  ],
+  "description": "Local side-by-side image generation comparison app for OpenAI and Gemini.",
+  "license": "ISC"
+}
